@@ -1,5 +1,6 @@
-package meat;
+package meat.postProxy;
 
+import meat.postProxy.PostProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;

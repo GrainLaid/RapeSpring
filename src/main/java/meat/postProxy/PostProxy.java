@@ -1,8 +1,8 @@
-package meat;
+package meat.postProxy;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Profiling {
+public @interface PostProxy {
 }

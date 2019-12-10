@@ -1,4 +1,4 @@
-package meat;
+package meat.repeat;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

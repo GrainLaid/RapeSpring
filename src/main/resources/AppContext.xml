@@ -6,13 +6,13 @@
     <!--подключаем спринговые анотации-->
     <context:annotation-config/>
     <!--бин третьего контсруктора-->
-    <bean class="meat.PostProxyContextListener"/>
+    <bean class="meat.postProxy.PostProxyContextListener"/>
     <!--научили флагу профилирования через прокси (\/)О_О(\/)-->
-    <bean class="meat.ProfilingAnnotationBeanPostProcessor"/>
+    <bean class="meat.profiling.ProfilingAnnotationBeanPostProcessor"/>
     <!--обучаем спринг аннотации пост канстракт-->
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
     <!--суём бин пост процессор с новой анатоцией-->
-    <bean class="meat.RepeatScreamRandomAnnotationBeanPostProcessor"/>
+    <bean class="meat.repeat.RepeatScreamRandomAnnotationBeanPostProcessor"/>
     <!--созаём бин присваиваем полю значение-->
     <bean class="meat.RepeMeat" id="repeMeat">
         <property name="scream" value="МЕНЯ НАСИЛУЮТ!"/>

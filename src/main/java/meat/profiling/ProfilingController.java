@@ -1,4 +1,5 @@
-package meat;
+package meat.profiling;
+
 //Класс для флага
 public class ProfilingController implements ProfilingControllerMBean {
     //флаг установил вручную чтобы постоянно не лазить и не запускать МБин

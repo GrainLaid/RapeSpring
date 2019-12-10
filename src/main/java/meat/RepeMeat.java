@@ -1,5 +1,9 @@
 package meat;
 
+import meat.postProxy.PostProxy;
+import meat.profiling.Profiling;
+import meat.repeat.RepeatScreamRandom;
+
 import javax.annotation.PostConstruct;
 
 //оновной класс для приколюх!
