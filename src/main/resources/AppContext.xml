@@ -3,8 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
     <!--подключаем спринговые анотации-->
     <context:annotation-config/>
+    <!--эта магия вообще жесть классы помеченые аннотацией @HellInSpring все бены меняюсяна новые обьекты нового класс-->
+    <bean class="meat.hellSpring.HellInSpringBeanFactoryBeanpostProcesser"/>
     <!--бин третьего контсруктора-->
     <bean class="meat.postProxy.PostProxyContextListener"/>
     <!--научили флагу профилирования через прокси (\/)О_О(\/)-->

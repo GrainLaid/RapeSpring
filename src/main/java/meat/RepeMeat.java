@@ -1,5 +1,6 @@
 package meat;
 
+import meat.hellSpring.HellInSpring;
 import meat.postProxy.PostProxy;
 import meat.profiling.Profiling;
 import meat.repeat.RepeatScreamRandom;
@@ -10,6 +11,10 @@ import javax.annotation.PostConstruct;
 @Profiling
 //аннотация будет добавлять логику уже в существующие обьекты! Как? Да хер бы я понимал чё этот пост процессор бина там делает!
 //короче это будет прокси класс.
+
+// если убрать данную анатацию код будет работать как играньше, данная анатация подменяет бины класса другими.
+@HellInSpring(hellNewImpl = RepeMeatWow.class)
+
 public class RepeMeat implements Meat {
     @RepeatScreamRandom(min = 1, max = 10)
     private int repeat;
