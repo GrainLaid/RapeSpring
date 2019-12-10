@@ -19,6 +19,10 @@ public class RepeMeat implements Meat {
     @RepeatScreamRandom(min = 1, max = 10)
     private int repeat;
 
+    public void setRepeat(int repeat) {
+        this.repeat = repeat;
+    }
+
     private String scream;
 //Обучаем сприн двухфазовому конструктору
     @PostConstruct
