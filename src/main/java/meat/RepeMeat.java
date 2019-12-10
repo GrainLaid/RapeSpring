@@ -27,7 +27,10 @@ public class RepeMeat implements Meat {
     }
 
     @Override
+    @PostProxy
+    //тут магия когда всё уже собранно и настроенно но я всё равно хочу менть уже готовое!
     public void sayWhatAreYouDoing() {
+        System.out.println("конструктор третей фазы");
         for (int i = 0; i < repeat; i++) {
             System.out.println(" Scream = " + scream);
         }

@@ -5,6 +5,5 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainRepe {
     public static void main(String[] args) {
        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("AppContext.xml");
-    context.getBean(Meat.class).sayWhatAreYouDoing();
     }
 }
