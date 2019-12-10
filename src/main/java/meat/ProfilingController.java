@@ -1,7 +1,8 @@
 package meat;
 //Класс для флага
 public class ProfilingController implements ProfilingControllerMBean {
-    private boolean enabled;
+    //флаг установил вручную чтобы постоянно не лазить и не запускать МБин
+    private boolean enabled = true;
 
     public boolean isEnabled() {
         return enabled;

@@ -30,7 +30,7 @@ public class RepeMeat implements Meat {
     @PostProxy
     //тут магия когда всё уже собранно и настроенно но я всё равно хочу менть уже готовое!
     public void sayWhatAreYouDoing() {
-        System.out.println("конструктор третей фазы");
+        System.out.println("конструктор третей фазы, лезу в прокси меняю там всё как хочу");
         for (int i = 0; i < repeat; i++) {
             System.out.println(" Scream = " + scream);
         }
