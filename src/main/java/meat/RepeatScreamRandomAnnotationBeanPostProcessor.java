@@ -12,10 +12,11 @@ import java.util.Random;
 public class RepeatScreamRandomAnnotationBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        //учим новую анатацию работать!
+        //учим новую аннотацию работать!
         Field[] fields = bean.getClass().getDeclaredFields();
         for (Field field : fields) {
             RepeatScreamRandom annotation = field.getAnnotation(RepeatScreamRandom.class);
+            //ищем поля с данной аннотацией
             if (annotation != null){
                 int min = annotation.min();
                 int max = annotation.max();
